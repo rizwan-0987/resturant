@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant</title>
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary bg-black navbar-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://themewagon.gitlab.io/restaurant/assets/img/logo.png"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Header Static</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Header Slider</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Youtube Background</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Self Hosted Video</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">RTL</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Gallery</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">About</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Menu</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Components
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Alerts</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Background</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Badges</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Breadcrumb</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Utilities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Alerts</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Background</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Badges</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Breadcrumb</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Plugins
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Alerts</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Background</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Badges</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Breadcrumb</a></li>
+                  
+                </ul>
+              </li>
+          </ul>
+          <div>
+            <button type="button" class="btn btn-outline-warning">Make ARESERVATION</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END  -->
+
+    <header>
+      <!-- <section class="hero-section  text-black ">
+        <div class="container-fluid "; >
+          <div
+            class="row justify-content-between align-items-center m-auto gap-md-0 min-vh-100 ">
+          <div class="col-12 col-md-4 bg-image min-vh-100" style="background-image:url(https://themewagon.gitlab.io/restaurant/assets/img/food/Vector.png);background-position:left;background-size:100%;" >
+            <img 
+              src="https://themewagon.gitlab.io/restaurant/assets/img/food/plate.png"
+              alt="hero-image"
+              class="animate__rotateInDownLeft myAnim img-fluid custom-image"
+              width="90%"
+              height="90%"
+            />
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 mt-0 mt-md-0 text-left text-md-left offset-lg-1 order-md-1 align-items-start ms-0 " > 
+              <h1 class="fw-bold ">The Spectacle <strong>Before Us
+                Was Indeed</strong> Sublime.</h1>
+              <p class="fs-5 my-3">
+                Apparently, we had reached a great height in the atmosphere, for the sky was a dead black, and which lifts the horizon of the sea to the level of the spectator on a hillside.
+              </p>
+              <button type="button" class="btn btn-warning">ORDER NOW</button>
+              <button type="button" class="btn btn-outline-warning">OUR LOCATION</button>
+            </div>
+            
+          </div>
+        </div>
+      </section> -->
+      <section class="py-0 position-relative ">
+        <div class="bg-holder d-none d-lg-block "></div>
+    
+        <div class="container-fluid ">
+            <div class="row align-items-md-center min-vh-100 no-gutters overflow-hidden ">
+                <div class="col-md-7 col-lg-6 col-xl-5 col-xxl-4 mt-6 mt-md-0 text-center text-md-left offset-lg-1 order-md-1 px-3 pt-6 ">
+                    <h1 class="fw-light display-4">
+                        The Spectacle <span class="fw-bold">Before Us<br>Was Indeed </span>Sublime.
+                    </h1>
+                    <p class="d-none d-md-block">
+                        Apparently, we had reached a great height in the atmosphere, for the sky was a dead black, and which lifts the horizon of the sea to the level of the spectator on a hillside.
+                    </p>
+                    <div class="mt-3">
+                        <button class="btn btn-warning rounded me-3">Order <span class="d-none d-lg-inline">Online</span></button>
+                        <a class="btn btn-outline-warning" href="#contact">Our Location</a>
+                    </div>
+                </div>
+    
+                <div class="col-md col-lg-4 mt-4 mt-sm-0 text-center text-md-left">
+                    <img class="img-fluid ml-md-6 myAnim" src="https://themewagon.gitlab.io/restaurant/assets/img/food/plate.png" alt="Delicious food plate">
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+        <!-- about us Start -->
+
+
+    <!-- HERO SECTION END  -->
+
+   
+    <div class="menu-carousel text-center m-5 fw-bolder"><h2 class="text-center">Menu</h2>
+
+      <p class="h1">Taste Our Foods & Enjoy</p></div>
+  
+    <div class="container my-5">
+      <div class="owl-carousel owl-theme">
+          <div class="item">
+              <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/antioxidant-beverage-carrot-juice.png" alt="Food 1">
+              <div class="overlay">Pumpkin Spice-juice</div>
+          </div>
+          <div class="item">
+              <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/bowl-calcium-cereal.png" alt="Food 2">
+              <div class="overlay">Blueberry Milk Smoothie</div>
+          </div>
+          <div class="item">
+              <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/bowl-delicious-dinner.png" alt="Food 3">
+              <div class="overlay">Spicy Chicken Spaghetti</div>
+          </div>
+          <div class="item">
+              <img src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/2.jpg" alt="Food 4">
+              <div class="overlay">Beef Burger</div>
+          </div>
+          <div class="item">
+              <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/bread-bun-chopping-board.png" alt="Food 5">
+              <div class="overlay">Smoked Beef Sub-Sandwitch</div>
+          </div>
+      </div>
+  </div>
+
+   <!-- menu start -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+        <ul class="nav nav-pills mx-auto gap-2">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#breakfast">
+                    <img src="https://www.svgrepo.com/show/390065/breakfast-hot-drink-coffee.svg" class="menu-icon" alt="Breakfast">
+                    <span class="nav-text">Breakfast</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#lunch">
+                    <img src="https://www.svgrepo.com/show/482312/meal-12.svg" class="menu-icon" alt="Lunch">
+                    <span class="nav-text">Lunch</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#dinner">
+                    <img src="https://www.svgrepo.com/show/301838/dinner.svg" class="menu-icon" alt="Dinner">
+                    <span class="nav-text">Dinner</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#desserts">
+                    <img src="https://www.svgrepo.com/show/345548/cake.svg" class="menu-icon" alt="Desserts">
+                    <span class="nav-text">Desserts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#drinks">
+                    <img src="https://www.svgrepo.com/show/490767/glass-drinks.svg" class="menu-icon" alt="Drinks">
+                    <span class="nav-text">Drinks</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Menu Content (same as previous version) -->
+<div class="container-fluid menu-container align-content-center m-auto">
+  <div class="tab-content menuu-bgg align-content-center m-auto">
+        <!-- Breakfast -->
+        <div class="tab-pane fade show active" id="breakfast">
+          <div class="container mt-4 menu-container bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BOWL</h5>
+                        <p>Black Bean Cake, Greens, Tomato & <br> Avocado Pico drizzled with <br>Lime Cream (Add egg $1)</p>
+                    </div>
+                    <span>$8.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>EGG SANDWICH</h5>
+                        <p>Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <span>$7.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BURRITO</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>VEGGIE JAMMIE</h5>
+                        <p>Everything Bagel with Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <span>$5.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BAGEL WITH CREAM CHEESE</h5>
+                        <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <span>$6.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST PASTRIES</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>FRIED EGG</h5>
+                        <p>Three Fried Eggs, House Hot Sauce, Local Cheddar Mac, Lettuce, Pickle & Onion on a Sesame Roll</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>SMOKED SALMON BAGEL</h5>
+                        <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                  <div>
+                      <h5>SMOKED SALMON BAGEL</h5>
+                      <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                  </div>
+                  <span>$9.50</span>
+              </div>
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- Lunch -->
+        <div class="tab-pane fade" id="lunch">
+          <div class="container mt-4 menu-container bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BOWL</h5>
+                        <p>Black Bean Cake, Greens, Tomato & <br> Avocado Pico drizzled with <br>Lime Cream (Add egg $1)</p>
+                    </div>
+                    <span>$8.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>EGG SANDWICH</h5>
+                        <p>Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <span>$7.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BURRITO</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>VEGGIE JAMMIE</h5>
+                        <p>Everything Bagel with Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <span>$5.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BAGEL WITH CREAM CHEESE</h5>
+                        <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <span>$6.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST PASTRIES</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>FRIED EGG</h5>
+                        <p>Three Fried Eggs, House Hot Sauce, Local Cheddar Mac, Lettuce, Pickle & Onion on a Sesame Roll</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>SMOKED SALMON BAGEL</h5>
+                        <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                  <div>
+                      <h5>SMOKED SALMON BAGEL</h5>
+                      <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                  </div>
+                  <span>$9.50</span>
+              </div>
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- Dinner -->
+        <div class="tab-pane fade" id="dinner">
+          <div class="container mt-4 menu-container bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BOWL</h5>
+                        <p>Black Bean Cake, Greens, Tomato & <br> Avocado Pico drizzled with <br>Lime Cream (Add egg $1)</p>
+                    </div>
+                    <span>$8.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>EGG SANDWICH</h5>
+                        <p>Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <span>$7.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BURRITO</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>VEGGIE JAMMIE</h5>
+                        <p>Everything Bagel with Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <span>$5.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BAGEL WITH CREAM CHEESE</h5>
+                        <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <span>$6.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST PASTRIES</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>FRIED EGG</h5>
+                        <p>Three Fried Eggs, House Hot Sauce, Local Cheddar Mac, Lettuce, Pickle & Onion on a Sesame Roll</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>SMOKED SALMON BAGEL</h5>
+                        <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                  <div>
+                      <h5>SMOKED SALMON BAGEL</h5>
+                      <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                  </div>
+                  <span>$9.50</span>
+              </div>
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="tab-pane fade" id="desserts">
+          <div class="container mt-4 menu-container bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BOWL</h5>
+                        <p>Black Bean Cake, Greens, Tomato & <br> Avocado Pico drizzled with <br>Lime Cream (Add egg $1)</p>
+                    </div>
+                    <span>$8.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>EGG SANDWICH</h5>
+                        <p>Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <span>$7.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BURRITO</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>VEGGIE JAMMIE</h5>
+                        <p>Everything Bagel with Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <span>$5.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BAGEL WITH CREAM CHEESE</h5>
+                        <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <span>$6.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST PASTRIES</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>FRIED EGG</h5>
+                        <p>Three Fried Eggs, House Hot Sauce, Local Cheddar Mac, Lettuce, Pickle & Onion on a Sesame Roll</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>SMOKED SALMON BAGEL</h5>
+                        <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                  <div>
+                      <h5>SMOKED SALMON BAGEL</h5>
+                      <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                  </div>
+                  <span>$9.50</span>
+              </div>
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="tab-pane fade" id="drinks">
+          <div class="container mt-4 menu-container bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BOWL</h5>
+                        <p>Black Bean Cake, Greens, Tomato & <br> Avocado Pico drizzled with <br>Lime Cream (Add egg $1)</p>
+                    </div>
+                    <span>$8.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>EGG SANDWICH</h5>
+                        <p>Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <span>$7.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BREAKFAST BURRITO</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>VEGGIE JAMMIE</h5>
+                        <p>Everything Bagel with Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <span>$5.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>BAGEL WITH CREAM CHEESE</h5>
+                        <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <span>$6.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5 ">
+                    <div>
+                        <h5>BREAKFAST PASTRIES</h5>
+                        <p>Three Scrambled Eggs, Cheddar, Housemade Black Bean Cake, Avocado, Pico, & Lime Cream</p>
+                    </div>
+                    <span>$9.00</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>FRIED EGG</h5>
+                        <p>Three Fried Eggs, House Hot Sauce, Local Cheddar Mac, Lettuce, Pickle & Onion on a Sesame Roll</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                    <div>
+                        <h5>SMOKED SALMON BAGEL</h5>
+                        <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                    </div>
+                    <span>$9.50</span>
+                </div>
+                <div class="col-lg-3 col-md-6 menu-item text-start d-flex flex-row me-5 ms-5">
+                  <div>
+                      <h5>SMOKED SALMON BAGEL</h5>
+                      <p>Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted Bagel</p>
+                  </div>
+                  <span>$9.50</span>
+              </div>
+                
+            </div>
+        </div>
+</div>
+
+ <!-- banner start here -->
+ <div class="container-fluid banner text-center mt-lg-4">
+  <div class="row align-items-center">
+      <div class="col-lg-6 offset-lg-3">
+          <h6>Hungry?</h6>
+          <h2>We will home deliver!</h2>
+          <button class="btn btn-warning">MAKE AN ORDER</button>
+      </div>
+  </div>
+  <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/fried-clipart-transparent-background-7.png" alt="Fries" class="fries-img d-none d-lg-block">
+</div>
+
+<!-- catering section start -->
+
+<div class="container catering-section">
+  <h6 class="text-uppercase text-secondary">Catering</h6>
+  <h2 class="fw-bold">We Manage Your Events</h2>
+  <p class="text-muted">
+      Allow our Chef to deliver the perfect private dinner or cocktail party experience in your home; or let us simply add a little extra flavor to your next office meeting, boat trip, or beach picnic. 
+      By partnering with our sibling location Rosewater Wine & Spirits, we can offer a full array of bar services and beverage selections. Email us to learn more.
+  </p>
+  <div class="catering-card mt-4">
+      <div class="catering-content flex-column flex-lg-row">
+          <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/pancake_PNG94.png" alt="Pancakes" class="img-fluid">
+          <div class="d-flex flex-column mt-5">
+              <p class="fw-semibold text-center mt-3">We Cater in Weddings, Corporate Functions and Events</p>
+              <button class="btn btn-warning">HIRE US NOW</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- image grid -->
+ 
+<section class="bg-light pt-lg-8 pt-7 mt-lg-5" id="gallery">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col pl-0">
+        <div class="row no-gutters mb-2">
+          <div class="col-md-5 px-2 mb-3 mb-md-0 bgg-image"><a href="assets/img/gallery/big/bigimg.jpg" data-fancybox="gallery" data-caption="Image caption">
+              <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/bigimg.jpg" alt="">
+            </a></div>
+          <div class="col-md-7">
+            <div class="row g-lg-3">
+              <div class="col-4 px-2 mb-3"><a href="assets/img/gallery/big/1.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/1.jpg" alt="">
+                </a></div>
+              <div class="col-4 px-2 mb-3"><a href="assets/img/gallery/big/2.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/2.jpg" alt="">
+                </a></div>
+              <div class="col-4 px-2 mb-3"><a href="assets/img/gallery/big/3.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/3.jpg" alt="">
+                </a></div>
+              <div class="col-4 px-2 mb-3"><a href="assets/img/gallery/big/4.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/4.jpg" alt="">
+                </a></div>
+              <div class="col-4 px-2 mb-3"><a href="assets/img/gallery/big/5.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/5.jpg" alt="">
+                </a></div>
+              <div class="col-4 px-2"><a href="assets/img/gallery/big/6.jpg" data-fancybox="gallery" data-caption="Image caption">
+                  <img class="img-fluid rounded-soft" src="https://themewagon.gitlab.io/restaurant/assets/img/gallery/thumb/6.jpg" alt="">
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end of .container-->
+</section>
+<div class="container-fluid my-5">
+  <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-start">
+          <h6 class="text-uppercase">About Us</h6>
+          <h2><strong>Who Are We?</strong></h2>
+          <p>We are a chain of theme restaurants founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
+          <button class="btn btn-warning">Learn More</button>
+          
+          <div class="row mt-4">
+              <div class="col-lg-4 col-sm-12 text-center">
+                  <img src="https://themewagon.gitlab.io/restaurant/assets/img/team/1.png" class="rounded-circle" alt="Profile">
+                  <p class="fw-bold">Gordon Ramsey</p>
+                  <p class="text-muted">Owner & Founder</p>
+              </div>
+              <div class="col-lg-4 col-sm-12 text-center">
+                  <img src="https://themewagon.gitlab.io/restaurant/assets/img/team/2.png" class="rounded-circle" alt="Profile">
+                  <p class="fw-bold">Gordon Ramsey</p>
+                  <p class="text-muted">Owner & Founder</p>
+              </div>
+              <div class="col-lg-4 col-sm-12 text-center">
+                  <img src="https://themewagon.gitlab.io/restaurant/assets/img/team/3.png" class="rounded-circle" alt="Profile">
+                  <p class="fw-bold">Gordon Ramsey</p>
+                  <p class="text-muted">Owner & Founder</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-6 d-none d-lg-block text-end">
+          <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/soup.png" class="bowl-img" alt="Bowl of Soup">
+      </div>
+  </div>
+</div>
+
+<!-- contact us start -->
+
+<section class="contact-section text-center position-relative">
+  <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/green.png" class="background-img" alt="Lettuce">
+  <div class="container content-container ">
+      <h5 class="text-uppercase">Location & Timing</h5>
+      <h2 class="fw-bold">Contact with us</h2>
+      <div class="row mt-4">
+          <div class="col-md-4">
+              <div class="p-3 shadow bg-white rounded zzinde mt-sm-5 ">
+                  <p><strong>📍 Av. Paz Soldán 290, San Isidro, Lima 27 - Peru</strong></p>
+                  <p>📞 +511 442-2777</p>
+                  <p>✉️ mail@restaurantpro.com</p>
+              </div>
+          </div>
+          <div class="col-md-4 ">
+              <div class="p-3 shadow bg-white rounded mt-sm-5">
+                  <p class="text-danger"><strong>Hours of service</strong></p>
+                  <p>Monday to Saturday: 1:00 pm - 3:00 pm & 7:00 pm - 11:00 pm</p>
+                  <p>Sunday: 12:30 pm - 3:30 pm</p>
+              </div>
+          </div>
+          <div class="col-md-4 ">
+              <div class="p-3 shadow bg-white rounded position-relative mt-sm-5">
+                  <p><strong>Telephone support:</strong></p>
+                  <p>Monday to Saturday: 9:00 am - 9:00 pm</p>
+                  <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/kisspng-soup.png" class="dish-img" alt="Dish">
+                  <button class="btn btn-danger mt-3">MAKE A RESERVATION</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- map iframe -->
+<div class="align-content-center d-flex justify-content-center flex-column container"><h2 class="fw-bold text-center mt-5">OUR LOCATION</h2>
+  <div class="container mt-5 rounded-4" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">drones ireland</a></iframe></div></div>
+<!-- // contact form start -->
+<div class="container Form text-center m-5 fw-bolder">
+  <h2 class="text-center">Feel free to drop us a line!</h2>
+  <p class="fw-light">Let's talk if you have any query or suggestion. We are open to learn <br> from you. So don't hesitate to reach us anytime.</p>
+</div>
+
+<div class="container text-center p-5">
+  <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-6 col-lg-4">
+          <input class="form-control  m-2" type="text" placeholder="Your Name">
+          <input class="form-control m-2" type="text" placeholder="Subject">
+          <input class="form-control m-2" type="text" placeholder="Email address">
+          <div class="form-check text-start m-2 ">
+              <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                  Send me a copy
+              </label>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <textarea class="form-control m-2" id="exampleFormControlTextarea1" placeholder="Type Your Message here" rows="4"></textarea>
+          <button type="button" class="btn btn-dark m-2">GIVE US A SHOT</button>
+      </div>
+  </div>
+</div>
+ <!-- carosssel start -->
+  
+<div class="container-fluid quotes">
+  <img src="https://themewagon.gitlab.io/restaurant/assets/img/food/pizza2.png" class="pizza" alt="">
+ 
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <div class="container">
+          <div class="testimonial">
+              <div class="quote">&#8220;</div>
+              <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+              <p class="text-muted">Restaurant Pro probably makes one of the best pizzas in town. I would definitely post their pizza picture someday. But today I have tasted their other items. So there I have mentioned that.</p>
+              <div class="author">- Richard Hendriks</div>
+          </div>
+      </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="container">
+          <div class="testimonial">
+              <div class="quote">&#8220;</div>
+              <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+              <p class="text-muted">Restaurant Pro probably makes one of the best pizzas in town. I would definitely post their pizza picture someday. But today I have tasted their other items. So there I have mentioned that.</p>
+              <div class="author">- Richard Hendriks</div>
+          </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="testimonial">
+              <div class="quote">&#8220;</div>
+              <div class="stars">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+              <p class="text-muted">Restaurant Pro probably makes one of the best pizzas in town. I would definitely post their pizza picture someday. But today I have tasted their other items. So there I have mentioned that.</p>
+              <div class="author">- Richard Hendriks</div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  
+  
+</div>
+
+<!-- footer start here -->
+
+<footer class="footer ">
+  <div class="container  ">
+      <div class="row text-center text-md-start footer-2 ">
+          <div class="col-md-4 mb-4 d-flex justify-content-center footer-1 ">
+            <div><img class="fork" src="https://themewagon.gitlab.io/restaurant/assets/img/food/pngfood2.png" alt=""></div>
+             <div> <img src="https://themewagon.gitlab.io/restaurant/assets/img/logo.png" alt="Restaurant Logo">
+              <h5><span style="color: #ffc107; font-weight: bold;">Want To Taste Our Food?</span></h5>
+              <button class="cta-button">ORDER ONLINE</button></div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <h6>ABOUT</h6>
+              <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Hire Us</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+              <h6>RESOURCES</h6>
+              <ul class="list-unstyled">
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Privacy</a></li>
+              </ul>
+              <div class="social-icons mt-3">
+                  <a href="#"><img class="social-size"  src="https://www.svgrepo.com/show/303113/facebook-icon-logo.svg" alt="Facebook"></a>
+                  <a href="#"><img class="social-size" src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram"></a>
+                  <a href="#"><img class="social-size" src="https://www.svgrepo.com/show/349394/google-plus.svg" alt="Google"></a>
+                  <a href="#"><img class="social-size" src="https://www.svgrepo.com/show/349378/gmail.svg" alt="Email"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    >
+ 
+
+
+  </script>
+ <!-- jQuery (Required for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive:{
+                0:{ items:1 },
+                600:{ items:3 },
+                1000:{ items:5 }
+            }
+        });
+    });
+</script>
+
+  </body>
+</html>

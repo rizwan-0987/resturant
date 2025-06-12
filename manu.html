@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .nav-link {
+            color: #666;
+            cursor: pointer;
+        }
+        .nav-link.active {
+            color: #ff9800;
+            font-weight: bold;
+            border-bottom: 2px solid #ff9800;
+        }
+        .menu-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .price {
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <ul class="nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link active" onclick="showMenu('breakfast')"><i class="fas fa-coffee"></i> Breakfast</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showMenu('lunch')">Lunch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showMenu('dinner')">Dinner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showMenu('desserts')">Desserts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="showMenu('drinks')">Drinks</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Menu Content -->
+<div class="container menu-container">
+    <div id="menu-content">
+        <!-- Default menu shown on load -->
+        <h2>Breakfast</h2>
+        <div class="menu-item"><span>Black Bean Cake, Greens, Tomato & Avocado Pico</span><span class="price">$8.50</span></div>
+        <div class="menu-item"><span>Everything Bagel with Cream Cheese, Bacon, Tomato</span><span class="price">$7.50</span></div>
+        <div class="menu-item"><span>Scrambled Eggs, Cheddar, Black Bean Cake</span><span class="price">$9.50</span></div>
+    </div>
+</div>
+
+<script>
+    function showMenu(menu) {
+        let menuContent = document.getElementById('menu-content');
+
+        let menus = {
+            "breakfast": `
+                <h2>Breakfast</h2>
+                <div class="menu-item"><span>Black Bean Cake, Greens, Tomato & Avocado Pico</span><span class="price">$8.50</span></div>
+                <div class="menu-item"><span>Everything Bagel with Cream Cheese, Bacon, Tomato</span><span class="price">$7.50</span></div>
+                <div class="menu-item"><span>Scrambled Eggs, Cheddar, Black Bean Cake</span><span class="price">$9.50</span></div>
+            `,
+            "lunch": `
+                <h2>Lunch</h2>
+                <div class="menu-item"><span>Veggie Burger - Grilled patty, lettuce, tomato</span><span class="price">$9.00</span></div>
+                <div class="menu-item"><span>Chicken Wrap - Grilled Chicken, Avocado, Cheese</span><span class="price">$10.50</span></div>
+            `,
+            "dinner": `
+                <h2>Dinner</h2>
+                <div class="menu-item"><span>Grilled Salmon - Roasted veggies, sauce</span><span class="price">$15.00</span></div>
+                <div class="menu-item"><span>Steak - Mashed Potatoes</span><span class="price">$18.00</span></div>
+            `,
+            "desserts": `
+                <h2>Desserts</h2>
+                <div class="menu-item"><span>Chocolate Cake - Dark chocolate, creamy filling</span><span class="price">$6.00</span></div>
+                <div class="menu-item"><span>Ice Cream - Vanilla, Chocolate, or Strawberry</span><span class="price">$4.50</span></div>
+            `,
+            "drinks": `
+                <h2>Drinks</h2>
+                <div class="menu-item"><span>Coffee - Espresso, Cappuccino, Latte</span><span class="price">$3.50</span></div>
+                <div class="menu-item"><span>Smoothies - Mixed Berry, Banana, Mango</span><span class="price">$5.00</span></div>
+            `
+        };
+
+        // Change menu content
+        menuContent.innerHTML = menus[menu];
+
+        // Update active menu item
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
